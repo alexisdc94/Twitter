@@ -11,9 +11,8 @@ pipeline {
                 }
             }
             steps {
-				sh "cd .\Docker\prod\"
+				sh "cd ./Docker/prod/"
 				sh "docker-compose up"
-                sh "docker build --tag cdrault/tweet-search-project:${version} ."
             }
         }
         
