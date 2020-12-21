@@ -11,7 +11,7 @@ pipeline {
                 }
             }
             steps {
-				sh "docker-compose up"
+				sh "echo hi"
             }
         }
         

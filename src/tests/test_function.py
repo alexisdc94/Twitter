@@ -8,5 +8,6 @@ def toArray(string):
     return sentence
 
 
-def test_try():
-    assert "positive" == search(toArray("I love coconuts"))
+def test_sentiment_positive():
+    assert "positive" == search(toArray("Trump"))
+
