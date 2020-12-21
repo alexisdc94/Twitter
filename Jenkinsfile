@@ -7,7 +7,7 @@ pipeline {
         stage('Build Docker images') {
             when{
                 anyOf{
-                    branch 'dev'
+                    branch 'features'
                 }
             }
             steps {
