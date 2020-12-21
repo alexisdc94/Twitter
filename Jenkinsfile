@@ -12,6 +12,7 @@ pipeline {
             }
             steps {
 				sh "cd ./Docker/prod/"
+				sh "echo docker up"
 				sh "docker-compose up"
             }
         }
