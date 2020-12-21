@@ -4,9 +4,10 @@ pipeline {
 	
 		stage('Run Test') {
             when{
-                not{
+                anyOf{
                     branch 'dev'
                     branch 'feature'
+					branch 'release'
                 }
             }
             steps {
@@ -31,7 +32,7 @@ pipeline {
 		stage('Launch app on server') {
             when{
                 anyOf{
-                    branch 'develop'
+                    branch 'dev'
 					branch 'release'
                 }
             }
