@@ -1,22 +1,6 @@
 pipeline {
     agent any
     stages {
-	
-		stage('Run Test') {
-            when{
-                anyOf{
-                    branch 'dev'
-                    branch 'feature'
-					branch 'release'
-                }
-            }
-            steps {
-                sh "echo test phase start :"
-                
-                sh "echo test phase ended."
-            }
-        }
-        
         stage('Build Docker images') {
             when{
                 anyOf{
