@@ -9,7 +9,7 @@ pipeline {
                 }
             }
             steps {
-				sh "docker build -t twitterapp ."
+				bat "docker build -t twitterapp ."
             }
         }
         
@@ -21,9 +21,9 @@ pipeline {
                 }
             }
             steps {
-                sh "docker stop tweet_app_search"
-                sh "docker rm tweet_app_search"
-                sh "docker run -d -p 5000:5000 --name tweet_app_search twitterapp"
+                bat "docker stop tweet_app_search"
+                bat "docker rm tweet_app_search"
+                bat "docker run -d -p 5000:5000 --name tweet_app_search twitterapp"
             }
         }
 		
