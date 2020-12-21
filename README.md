@@ -4,6 +4,5 @@
 - download the project then
 
 ```console
-	cd .\Docker\prod\
 	docker-compose up
 ```
