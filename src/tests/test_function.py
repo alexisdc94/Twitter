@@ -1,5 +1,7 @@
 import pytest
-from .app import search
+import sys
+sys.path.append("..")
+from main.app import search
 
 
 def toArray(string):
