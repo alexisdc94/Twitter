@@ -13,3 +13,5 @@
 ```console
 	docker run -d -p 5000:5000 --name tweet_app_search
 ```
+
+  as you may see, the app run on port 5000 of your localhost
